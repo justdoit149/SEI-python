@@ -2,7 +2,7 @@
 def histogram(fileName):
     f = open(fileName)
     n = int(f.readline())
-    nums = list(map(int,f.readline().split()))
+    nums = list(map(int,f.readline().split()))     #list(map(function,list))
     ranges = [0,0,0,0,0,0,0,0,0,0]
     for i in range(n):
         index = min(nums[i] // 10, 9)
